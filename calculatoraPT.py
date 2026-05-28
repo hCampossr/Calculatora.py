@@ -1,3 +1,5 @@
+import os
+
 def somar(x, y):
     soma = x + y
     return soma
@@ -32,24 +34,28 @@ while operacao_menu != 0:
     print(operacao_menu)
 
     if operacao_menu == 1:
+        os.system('cls' if os.name == 'nt' else 'clear')
         num1 = float(input("Digite os numeros da soma: "))
         num2 = float(input())
         result = somar(num1, num2)
         print(num1, "+", num2, "=", result)
 
     elif operacao_menu == 2:
+        os.system('cls' if os.name == 'nt' else 'clear')
         num1 = float(input("Digite os numeros da subtração: "))
         num2 = float(input())
         result = subtrair(num1, num2)
         print(num1, "-", num2, "=", result)
 
     elif operacao_menu == 3:
+        os.system('cls' if os.name == 'nt' else 'clear')
         num1 = float(input("Digite os numeros da multiplicar: "))
         num2 = float(input())
         result = multiplicar(num1, num2)
         print(num1, "x", num2, "=", result)
 
     elif operacao_menu == 4:
+        os.system('cls' if os.name == 'nt' else 'clear')
         num1 = float(input("Digite os numeros da dividir: "))
         num2 = float(input())
         if num2 != 0:
