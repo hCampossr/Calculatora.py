@@ -35,7 +35,6 @@ while operacao_menu != 0:
         "0. Sair\n")
 
     operacao_menu = int(input())
-    print(operacao_menu)
 
     if operacao_menu == 1:
         os.system('cls' if os.name == 'nt' else 'clear')
