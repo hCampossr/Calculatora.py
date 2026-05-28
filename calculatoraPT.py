@@ -16,13 +16,17 @@ def dividir(x, y):
     quociente = x / y
     return quociente
 
+def voltar():
+    input("\nPressione [ENTER] para voltar ao menu")
+
 operacao_menu = 5
 
 while operacao_menu != 0:
+    os.system('cls' if os.name == 'nt' else 'clear')
     print(19*"=")
     print(" MENU CALCULADORA")
     print(19*"=")
-    print("\n\n Selecione para a operação:\n",
+    print("\n\n Selecione para a operação:\n"
         "1. Somar\n"
         "2. Subtrair\n"
         "3. Multiplicar\n"
@@ -39,6 +43,7 @@ while operacao_menu != 0:
         num2 = float(input())
         result = somar(num1, num2)
         print(num1, "+", num2, "=", result)
+        voltar()
 
     elif operacao_menu == 2:
         os.system('cls' if os.name == 'nt' else 'clear')
@@ -46,6 +51,7 @@ while operacao_menu != 0:
         num2 = float(input())
         result = subtrair(num1, num2)
         print(num1, "-", num2, "=", result)
+        voltar()
 
     elif operacao_menu == 3:
         os.system('cls' if os.name == 'nt' else 'clear')
@@ -53,6 +59,7 @@ while operacao_menu != 0:
         num2 = float(input())
         result = multiplicar(num1, num2)
         print(num1, "x", num2, "=", result)
+        voltar()
 
     elif operacao_menu == 4:
         os.system('cls' if os.name == 'nt' else 'clear')
@@ -63,3 +70,4 @@ while operacao_menu != 0:
             print(num1, "/", num2, "=", result)
         else:
             print("Divisao invalida. Denominador igual a 0")
+        voltar()
