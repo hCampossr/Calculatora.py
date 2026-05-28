@@ -15,6 +15,7 @@ def dividir(x, y):
     return quociente
 
 operacao_menu = 5
+
 while operacao_menu != 0:
     print(19*"=")
     print(" MENU CALCULADORA")
@@ -51,5 +52,8 @@ while operacao_menu != 0:
     elif operacao_menu == 4:
         num1 = float(input("Digite os numeros da dividir: "))
         num2 = float(input())
-        result = dividir(num1, num2)
-        print(num1, "/", num2, "=", result)
+        if num2 != 0:
+            result = dividir(num1, num2)
+            print(num1, "/", num2, "=", result)
+        else:
+            print("Divisao invalida. Denominador igual a 0")
