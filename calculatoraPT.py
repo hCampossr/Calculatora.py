@@ -10,6 +10,10 @@ def multiplicar(x, y):
     produto = x * y
     return produto
 
+def dividir(x, y):
+    quociente = x / y
+    return quociente
+
 print(19*"=")
 print(" MENU CALCULADORA")
 print(19*"=")
@@ -42,3 +46,9 @@ if operacao_menu == 3:
     num2 = float(input())
     result = multiplicar(num1, num2)
     print(num1, "x", num2, "=", result)
+
+if operacao_menu == 4:
+    num1 = float(input("Digite os numeros da dividir: "))
+    num2 = float(input())
+    result = dividir(num1, num2)
+    print(num1, "/", num2, "=", result)
