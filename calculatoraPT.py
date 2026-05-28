@@ -6,6 +6,10 @@ def subtrair(x, y):
     reducao = x - y
     return reducao
 
+def multiplicar(x, y):
+    produto = x * y
+    return produto
+
 print(19*"=")
 print(" MENU CALCULADORA")
 print(19*"=")
@@ -32,3 +36,9 @@ if operacao_menu == 2:
     num2 = float(input())
     result = subtrair(num1, num2)
     print(num1, "-", num2, "=", result)
+
+if operacao_menu == 3:
+    num1 = float(input("Digite os numeros da multiplicar: "))
+    num2 = float(input())
+    result = multiplicar(num1, num2)
+    print(num1, "x", num2, "=", result)
