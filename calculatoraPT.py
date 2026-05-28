@@ -2,6 +2,10 @@ def somar(x, y):
     soma = x + y
     return soma
 
+def subtrair(x, y):
+    reducao = x - y
+    return reducao
+
 print(19*"=")
 print(" MENU CALCULADORA")
 print(19*"=")
@@ -22,3 +26,9 @@ if operacao_menu == 1:
     num2 = float(input())
     result = somar(num1, num2)
     print(num1, "+", num2, "=", result)
+
+if operacao_menu == 2:
+    num1 = float(input("Digite os numeros da subtração: "))
+    num2 = float(input())
+    result = subtrair(num1, num2)
+    print(num1, "-", num2, "=", result)
