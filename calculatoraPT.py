@@ -39,7 +39,7 @@ while operacao_menu != 0:
 
     if operacao_menu == 1:
         os.system('cls' if os.name == 'nt' else 'clear')
-        num1 = float(input("Digite os numeros da soma: "))
+        num1 = float(input("Digite os numeros da soma: \n\n"))
         num2 = float(input())
         result = somar(num1, num2)
         print(num1, "+", num2, "=", result)
@@ -47,7 +47,7 @@ while operacao_menu != 0:
 
     elif operacao_menu == 2:
         os.system('cls' if os.name == 'nt' else 'clear')
-        num1 = float(input("Digite os numeros da subtração: "))
+        num1 = float(input("Digite os numeros da subtração: \n\n"))
         num2 = float(input())
         result = subtrair(num1, num2)
         print(num1, "-", num2, "=", result)
@@ -55,7 +55,7 @@ while operacao_menu != 0:
 
     elif operacao_menu == 3:
         os.system('cls' if os.name == 'nt' else 'clear')
-        num1 = float(input("Digite os numeros da multiplicar: "))
+        num1 = float(input("Digite os numeros da multiplicar: \n\n"))
         num2 = float(input())
         result = multiplicar(num1, num2)
         print(num1, "x", num2, "=", result)
@@ -63,11 +63,11 @@ while operacao_menu != 0:
 
     elif operacao_menu == 4:
         os.system('cls' if os.name == 'nt' else 'clear')
-        num1 = float(input("Digite os numeros da dividir: "))
+        num1 = float(input("Digite os numeros da dividir: \n\n"))
         num2 = float(input())
         if num2 != 0:
             result = dividir(num1, num2)
             print(num1, "/", num2, "=", result)
         else:
-            print("Divisao invalida. Denominador igual a 0")
+            print("Divisao invalida. Denominador igual a 0\n")
         voltar()
